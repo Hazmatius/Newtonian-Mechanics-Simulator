@@ -114,7 +114,7 @@ public class Render
         sun.setVelocity(v);
         cosmos.addAster(sun);
         
-        frame.setBackground(Color.BLACK);
+        frame.getContentPane().setBackground(Color.BLACK);
         frame.setSize(1500, 1000);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Render");
@@ -128,7 +128,7 @@ public class Render
         sun.setDims(new int[]{0, 1});
         earth2.setDims(new int[]{1});
         
-        cosmos.purgeType("moon");
+        //cosmos.purgeType("moon");
         
         class Comp extends JComponent
         {
